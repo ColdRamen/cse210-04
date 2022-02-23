@@ -1,7 +1,7 @@
 # cse210-04
 
 
-# Rules
+## Rules
 Greed is played according to the following rules.
 
 - Gems and rocks randomly appear and fall from the top of the screen.
@@ -11,6 +11,6 @@ Greed is played according to the following rules.
 - Gems and rocks are removed when the player touches them.
 - The game continues until the player closes the window.
 
-# Description
+## Description
 
 The program uses tkinter, a GUI-creating tool for python. 

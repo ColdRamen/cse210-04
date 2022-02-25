@@ -13,6 +13,8 @@ class Board(Canvas):
         self.initGame()
         self.pack()
 
+        
+
     def initGame(self):
 
         # Holds the value of the player's score
@@ -27,6 +29,8 @@ class Board(Canvas):
 
         self.createObjects()
         self.bind_all("<Key>", self.onKeyPressed)
+        
+        
 
     def createObjects(self):
 
@@ -34,6 +38,22 @@ class Board(Canvas):
 
         # Creates the symbol representing the player, with the tag "player"
         self.create_text(self.playerX, self.playerY, text="#", font=('30'), tag="player", fill="white")
+
+        self.create_text(600, 30, text="*", fill="white", tag="gem", font=('25'))
+
+        # gem = Gem()
+        # gem.createGem()
+
+    def moveGem(self):
+
+        self.move("gem", 0, 1)
+        gem_coords = self.coords("gem")
+
+        return gem_coords
+
+
+
+            
 
     def onKeyPressed(self, e):
         

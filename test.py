@@ -10,6 +10,8 @@ class Director:
 
         self.textFont = pygame.font.SysFont('Ubuntu', 20)
  
+        # Figure out text in pygame
+
         self.win = pygame.display.set_mode((800, 600))
   
         pygame.display.set_caption("Greed")
@@ -49,8 +51,10 @@ class Director:
 
             keys = pygame.key.get_pressed()
             self.player.update(keys)
+
             self.gem1.update()
             self.gem2.update()
+
             self.rock1.update()
             self.rock2.update()
             self.rock3.update()
@@ -66,8 +70,10 @@ class Director:
             self.rock1.drawRock(self.win)
             self.rock2.drawRock(self.win)
             self.rock3.drawRock(self.win)
+
             self.gem1.drawGem(self.win)
             self.gem2.drawGem(self.win)
+            
             self.player.drawPlayer(self.win)
 
             if pygame.Rect.colliderect(self.player.player_rect, self.gem1.gem_rect):
@@ -115,6 +121,9 @@ class Player:
             
             # increment in x co-ordinate
             self.x += self.vel
+
+# Add Object Class
+# Gem and Rock will inherit
 
 class Gem:
     

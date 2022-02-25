@@ -9,7 +9,6 @@ class Director:
         pygame.font.init()
 
         self.textFont = pygame.font.SysFont('Ubuntu', 20)
-        
  
         self.win = pygame.display.set_mode((800, 600))
   

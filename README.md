@@ -1,4 +1,4 @@
-# cse210-04
+## cse210-04 - LETS GET GREEDY!
 
 
 ## Rules
@@ -14,3 +14,7 @@ Greed is played according to the following rules.
 ## Description
 
 The program uses tkinter, a GUI-creating tool for python. 
+
+## Authors
+1. Alex Ward
+2. George Ogidi

@@ -13,7 +13,7 @@ class Rock(Gem):
 
         super().__init__()
 
-        self.radius = random.randrange(20, 30)
+        self.radius = random.randrange(20, 60)
 
     def drawRock(self, win):
         '''This function draws the coordinates of the rock on the display.'''

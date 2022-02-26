@@ -6,6 +6,20 @@ from game.bigGem import BigGem
 
 class Director:
 
+    """
+    Director class: Directs the gameplay and creates the pygame window
+
+    Attributes:
+        textFont - creates a pygame font object
+        win - creates a pygame window
+        run - Boolean to tell if the game is running
+        score - tracks the player's score
+        player - creates a Player object
+        gem1, gem2 - creates Gem objects
+        rock1, rock2, rock3 - creates Rock objects
+    """
+
+
     def __init__(self):
 
         pygame.init()
@@ -32,11 +46,12 @@ class Director:
         self.rock1 = Rock()
         self.rock2 = Rock()
         self.rock3 = Rock()
-        
-    # def score_display(self):
-
 
     def playGame(self):
+        """
+        This function contains a while loop that updates the pygame window with gameplay changes. 
+        """
+
         while self.run:
     # creates time delay of 10ms 
             pygame.time.delay(10)

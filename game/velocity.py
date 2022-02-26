@@ -9,4 +9,4 @@ class Velocity:
 
     def __init__(self):
         '''generates random velocity for the gems and rocks'''
-        self.vel = random.randrange(1, 5)
+        self.vel = random.randrange(2, 5)

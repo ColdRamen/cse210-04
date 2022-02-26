@@ -13,4 +13,4 @@ Greed is played according to the following rules.
 
 ## Description
 
-The program uses tkinter, a GUI-creating tool for python. 
+The program uses tkinter, a GUI-creating tool for python.
